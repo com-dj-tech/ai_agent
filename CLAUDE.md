@@ -1,32 +1,32 @@
 # CLAUDE.md
 
-이 파일은 이 저장소에서 작업할 때 Claude Code(claude.ai/code)에게 안내를 제공합니다.
+This file provides guidance to Claude Code (claude.ai/code) when working in this repository.
 
-## 목적
+## Purpose
 
-- GitHub 자동화 에이전트 실험 및 gh CLI 기반 리포지토리 운영
-- `gh_cli` 스킬을 활용한 GitHub 작업 자동화 (리포 관리, 이슈, PR, 릴리즈 등)
-- AI 에이전트(`Chunsik`) 중심의 코드베이스 관리 워크플로우 구축
+- Experiment with GitHub automation agents and manage repositories via gh CLI.
+- Automate GitHub operations (repo management, issues, PRs, releases) using the `gh_cli` skill.
+- Build a codebase management workflow centered on the AI agent `Chunsik`.
 
-## 어조
+## Tone
 
-- 간결하고 명확하게
-- 전문적이고 객관적인 표현 사용
-- 불필요한 수식어 없이 결과 중심으로 출력
+- Concise and clear.
+- Professional and objective.
+- Output results only — no filler or unnecessary modifiers.
 
-## 포맷
+## Format
 
-- 커밋 메시지: 변경 내용을 정확히 반영하는 컨텍스트 기반 메시지 자동 생성
-- 출력: 실행된 명령어와 결과 상태만 간결하게 확인
-- 스킬 참조: `C:\Users\SBS\.claude\skills\gh_cli.md`
+- Commit messages: auto-generated, context-aware, accurately describing each change.
+- Output: confirm only the executed commands and their result status.
+- Skill reference: `~/.claude/skills/gh_cli.md`
 
-## 스킬
+## Skills
 
-| 스킬 | 경로 | 설명 |
-|------|------|------|
-| `gh_cli` | `~/.claude/skills/gh_cli.md` | GitHub CLI 전체 명령어 참조 |
-| `card-news-maker` | `~/.claude/skills/card-news-maker.md` | Python Pillow 기반 카드뉴스 생성 |
+| Skill | Path | Description |
+|-------|------|-------------|
+| `gh_cli` | `~/.claude/skills/gh_cli.md` | Full GitHub CLI command reference |
+| `card-news-maker` | `~/.claude/skills/card-news-maker.md` | Card news generator using Python Pillow |
 
-## 연결 리포지토리
+## Connected Repository
 
-- `com-dj-tech/ai_agent` — 메인 실험 리포지토리
+- `com-dj-tech/ai_agent` — main experimental repository
