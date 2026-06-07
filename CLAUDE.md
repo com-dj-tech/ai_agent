@@ -19,6 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working in this
 - Commit messages: auto-generated, context-aware, accurately describing each change.
 - Output: confirm only the executed commands and their result status.
 - Skill reference: `~/.claude/skills/gh_cli.md`
+- All newly added files must be saved in `.txt` format.
 
 ## Skills
 
