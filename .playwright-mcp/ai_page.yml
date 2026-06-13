@@ -1,0 +1,55 @@
+- generic [active] [ref=e1]:
+  - link "본문으로 이동" [ref=e2] [cursor=pointer]:
+    - /url: "#bodyContent"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - navigation "사이트" [ref=e6]:
+        - generic "주 메뉴" [ref=e7]
+      - link "위키백과" [ref=e12] [cursor=pointer]:
+        - /url: /wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EB%8C%80%EB%AC%B8
+        - img [ref=e13]
+        - img "위키백과" [ref=e15]
+    - generic [ref=e16]:
+      - search [ref=e17]:
+        - link "검색" [ref=e18] [cursor=pointer]:
+          - /url: /wiki/%ED%8A%B9%EC%88%98:%EA%B2%80%EC%83%89
+      - navigation "개인 도구" [ref=e21]:
+        - generic [ref=e22]
+  - generic [ref=e39]:
+    - generic [ref=e2721]:
+      - button "숨기기" [ref=e2723] [cursor=pointer]:
+        - img "숨기기" [ref=e2724]
+      - list [ref=e2726]:
+        - listitem [ref=e2727]
+        - listitem [ref=e2731]
+    - main [ref=e41]:
+      - generic [ref=e42]:
+        - navigation "목차" [ref=e43]
+        - heading "인공지능" [level=1] [ref=e49]
+        - generic [ref=e51]
+      - generic [ref=e57]:
+        - navigation "이름공간" [ref=e59]
+        - generic [ref=e67]
+      - generic "인공지능" [ref=e84]:
+        - generic [ref=e85]
+        - generic [ref=e88]
+        - generic [ref=e2658]
+    - contentinfo [ref=e2684]:
+      - list [ref=e2685]:
+        - listitem [ref=e2686]: 이 문서는 2026년 5월 13일 (수) 22:28에 마지막으로 편집되었습니다.
+        - listitem [ref=e2687]
+        - listitem [ref=e2689]
+      - list:
+        - listitem [ref=e2693]
+        - listitem [ref=e2695]
+        - listitem [ref=e2697]
+        - listitem [ref=e2699]
+        - listitem [ref=e2701]
+        - listitem [ref=e2703]
+        - listitem [ref=e2705]
+        - listitem [ref=e2707]
+      - list [ref=e2709]:
+        - listitem [ref=e2710]
+        - listitem [ref=e2714]
+  - generic [ref=e2718]:
+    - list

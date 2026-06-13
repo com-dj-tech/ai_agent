@@ -1,0 +1,2 @@
+[     242ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://books.toscrape.com/catalogue/category/books/science_22/page-3.html:0
+[     492ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://books.toscrape.com/favicon.ico:0
