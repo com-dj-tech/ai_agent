@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "skill_name": "docx_creator",
+    "skill_path": "C:/Users/SBS/.claude/skills/docx_creator.md",
+    "executor_model": "claude-sonnet-4-6",
+    "timestamp": "2026-06-07T00:00:00Z",
+    "evals_run": [0, 1, 2],
+    "runs_per_configuration": 1
+  },
+
+  "runs": [
+    {
+      "eval_id": 0,
+      "eval_name": "business-report",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 89.8,
+        "tokens": 22237,
+        "tool_calls": 6,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "outputs/ 디렉토리에 .docx 파일이 존재한다", "passed": true, "evidence": "2025년_2분기_업무보고.docx 생성 확인"},
+        {"text": "문서에 '2025년 2분기 업무보고' 제목이 포함된다", "passed": true, "evidence": "'업무보고' 텍스트 확인"},
+        {"text": "문서에 표(Table)가 1개 이상 포함된다", "passed": true, "evidence": "표 1개 확인"},
+        {"text": "번호 목록(List Number) 단락이 포함된다", "passed": true, "evidence": "List Number 스타일 단락 존재"},
+        {"text": "글머리 기호 목록(List Bullet) 단락이 포함된다", "passed": true, "evidence": "List Bullet 스타일 단락 존재"},
+        {"text": "헤더에 '전략기획팀' 텍스트가 포함된다", "passed": true, "evidence": "section.header에서 확인"}
+      ]
+    },
+    {
+      "eval_id": 0,
+      "eval_name": "business-report",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 105.6,
+        "tokens": 18979,
+        "tool_calls": 6,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "outputs/ 디렉토리에 .docx 파일이 존재한다", "passed": true, "evidence": "2025년_2분기_업무보고.docx 생성 확인"},
+        {"text": "문서에 '2025년 2분기 업무보고' 제목이 포함된다", "passed": true, "evidence": "'업무보고' 텍스트 확인"},
+        {"text": "문서에 표(Table)가 1개 이상 포함된다", "passed": true, "evidence": "표 1개 확인"},
+        {"text": "번호 목록(List Number) 단락이 포함된다", "passed": true, "evidence": "List Number 스타일 단락 존재"},
+        {"text": "글머리 기호 목록(List Bullet) 단락이 포함된다", "passed": true, "evidence": "List Bullet 스타일 단락 존재"},
+        {"text": "헤더에 '전략기획팀' 텍스트가 포함된다", "passed": true, "evidence": "section.header에서 확인"}
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "employee-list-table",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 61.7,
+        "tokens": 20072,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "employee_list.docx 파일이 생성된다", "passed": true, "evidence": "파일 존재 확인"},
+        {"text": "표가 5열로 구성된다", "passed": true, "evidence": "len(columns)==5"},
+        {"text": "표에 6행 이상 존재한다", "passed": true, "evidence": "len(rows)==6"},
+        {"text": "첫 번째 열 헤더에 '이름' 텍스트가 있다", "passed": true, "evidence": "cell(0,0).text='이름'"},
+        {"text": "헤더 행에 배경색이 적용된다", "passed": true, "evidence": "w:shd fill='003087'"}
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "employee-list-table",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 65.9,
+        "tokens": 15856,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "employee_list.docx 파일이 생성된다", "passed": true, "evidence": "파일 존재 확인"},
+        {"text": "표가 5열로 구성된다", "passed": true, "evidence": "len(columns)==5"},
+        {"text": "표에 6행 이상 존재한다", "passed": true, "evidence": "len(rows)==6"},
+        {"text": "첫 번째 열 헤더에 '이름' 텍스트가 있다", "passed": true, "evidence": "cell(0,0).text='이름'"},
+        {"text": "헤더 행에 배경색이 적용된다", "passed": true, "evidence": "w:shd fill 색상 확인"}
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "resume-hongkildong",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 95.0,
+        "tokens": 22410,
+        "tool_calls": 6,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "resume.docx 파일이 생성된다", "passed": true, "evidence": "파일 존재 확인"},
+        {"text": "문서에 '홍길동' 텍스트가 포함된다", "passed": true, "evidence": "한글 자간 스타일 적용으로 공백 삽입, 글자 각각 0xD64D 0xAE38 0xB3D9 확인"},
+        {"text": "경력사항 표(Table)가 포함된다", "passed": true, "evidence": "tables 1개 (3행 경력표)"},
+        {"text": "학력 관련 섹션이 포함된다", "passed": true, "evidence": "'학력'/'대학교' 텍스트 확인"},
+        {"text": "기술 또는 스킬 관련 목록이 포함된다", "passed": true, "evidence": "'기술'/'Python' 텍스트 확인"}
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "resume-hongkildong",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 98.4,
+        "tokens": 18679,
+        "tool_calls": 5,
+        "errors": 0
+      },
+      "expectations": [
+        {"text": "resume.docx 파일이 생성된다", "passed": true, "evidence": "파일 존재 확인"},
+        {"text": "문서에 '홍길동' 텍스트가 포함된다", "passed": true, "evidence": "한글 자간 공백 삽입, 글자 각각 확인"},
+        {"text": "경력사항 표(Table)가 포함된다", "passed": true, "evidence": "tables 2개 (경력표 + 학력표)"},
+        {"text": "학력 관련 섹션이 포함된다", "passed": true, "evidence": "'학력'/'대학교' 텍스트 확인"},
+        {"text": "기술 또는 스킬 관련 목록이 포함된다", "passed": true, "evidence": "'기술'/'Python' 텍스트 확인"}
+      ]
+    }
+  ],
+
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0},
+      "time_seconds": {"mean": 82.2, "stddev": 17.1, "min": 61.7, "max": 95.0},
+      "tokens": {"mean": 21573, "stddev": 1267, "min": 20072, "max": 22410}
+    },
+    "without_skill": {
+      "pass_rate": {"mean": 1.0, "stddev": 0.0, "min": 1.0, "max": 1.0},
+      "time_seconds": {"mean": 89.97, "stddev": 20.7, "min": 65.9, "max": 105.6},
+      "tokens": {"mean": 17838, "stddev": 1787, "min": 15856, "max": 18979}
+    },
+    "delta": {
+      "pass_rate": "+0.0",
+      "time_seconds": "-7.8",
+      "tokens": "+3735"
+    }
+  },
+
+  "notes": [
+    "모든 assertion이 with_skill/without_skill 양쪽에서 100% 통과 — 기본 python-docx 작업은 스킬 없이도 Claude가 충분히 처리 가능",
+    "with_skill이 평균 7.8초 빠름 — 스킬의 코드 패턴 참조로 시행착오 없이 바로 구현",
+    "with_skill이 평균 3,735 토큰 더 사용 — 스킬 파일 읽기 비용",
+    "차별화 포인트: 고급 기능(하이퍼링크, 페이지 번호 삽입, 커스텀 스타일, 동아시아 폰트 설정)에서 스킬 가치가 뚜렷해질 것으로 예상",
+    "이력서 eval에서 with_skill은 표 1개(경력), without_skill은 표 2개(경력+학력)를 생성 — 스킬 지침이 구조를 더 명확히 안내함"
+  ]
+}

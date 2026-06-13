@@ -1,0 +1,12 @@
+{
+  "eval_id": 2,
+  "variant": "without_skill",
+  "expectations": [
+    {"text": "resume.docx 파일이 생성된다", "passed": true, "evidence": "resume.docx 파일 존재 확인"},
+    {"text": "문서에 '홍길동' 텍스트가 포함된다", "passed": true, "evidence": "para0에 '홍'(0xD64D) '길'(0xAE38) '동'(0xB3D9) 각각 확인 — 자간 공백 삽입됨"},
+    {"text": "경력사항 표(Table)가 포함된다", "passed": true, "evidence": "doc.tables 2개 확인 (경력표 + 학력표)"},
+    {"text": "학력 관련 섹션이 포함된다", "passed": true, "evidence": "단락 텍스트에서 '학력'/'대학교' 검색 성공"},
+    {"text": "기술 또는 스킬 관련 목록이 포함된다", "passed": true, "evidence": "단락 텍스트에서 '기술'/'Python' 검색 성공"}
+  ],
+  "pass_rate": 1.0
+}

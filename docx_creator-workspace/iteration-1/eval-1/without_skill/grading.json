@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "variant": "without_skill",
+  "expectations": [
+    {"text": "employee_list.docx 파일이 생성된다", "passed": true, "evidence": "employee_list.docx 파일 존재 확인"},
+    {"text": "표가 5열로 구성된다", "passed": true, "evidence": "len(table.columns) == 5 확인"},
+    {"text": "표에 6행 이상(헤더 + 데이터 5행)이 존재한다", "passed": true, "evidence": "len(table.rows) == 6 확인"},
+    {"text": "첫 번째 열 헤더에 '이름' 텍스트가 있다", "passed": true, "evidence": "table.cell(0,0).text = '이름' 확인"},
+    {"text": "헤더 행에 배경색이 적용된다", "passed": true, "evidence": "w:shd fill 색상값 확인"}
+  ],
+  "pass_rate": 1.0
+}

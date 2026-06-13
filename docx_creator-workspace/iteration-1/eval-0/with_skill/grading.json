@@ -1,0 +1,13 @@
+{
+  "eval_id": 0,
+  "variant": "with_skill",
+  "expectations": [
+    {"text": "outputs/ 디렉토리에 .docx 파일이 존재한다", "passed": true, "evidence": "2025년_2분기_업무보고.docx 파일 생성 확인"},
+    {"text": "문서에 '2025년 2분기 업무보고' 제목이 포함된다", "passed": true, "evidence": "단락 텍스트에서 '업무보고' 검색 성공"},
+    {"text": "문서에 표(Table)가 1개 이상 포함된다", "passed": true, "evidence": "doc.tables 1개 이상 확인"},
+    {"text": "번호 목록(List Number) 단락이 포함된다", "passed": true, "evidence": "List Number 스타일 단락 존재"},
+    {"text": "글머리 기호 목록(List Bullet) 단락이 포함된다", "passed": true, "evidence": "List Bullet 스타일 단락 존재"},
+    {"text": "헤더에 '전략기획팀' 텍스트가 포함된다", "passed": true, "evidence": "section.header 텍스트에서 '전략기획팀' 검색 성공"}
+  ],
+  "pass_rate": 1.0
+}
