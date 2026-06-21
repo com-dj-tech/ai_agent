@@ -1,0 +1,22 @@
+연결 모두 완료
+
+account: a01087548364@gmail.com
+token_valid: true
+scope_count: 14
+scopes:
+  - drive
+  - gmail.modify
+  - calendar
+  - documents
+  - spreadsheets
+  - presentations
+  - tasks
+  - pubsub
+  - cloud-platform
+  - openid
+  - userinfo.email
+  - userinfo.profile
+  - email
+  - profile
+
+date: 2026-06-14
