@@ -1,0 +1,2 @@
+- [비건 립밤 출시 프로젝트](project_vegan_lipbalm.md) — 2026-06-28 기획 회의, 9개 TASK, 마케팅 예산 300만원, 목표 출시 2026-08-17
+- [사용자 역할: 마케팅 PM](user_role.md) — 신상품 기획·마케팅 담당, 이메일 computer.daejeons@gmail.com
