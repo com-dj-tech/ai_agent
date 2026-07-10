@@ -1,0 +1,3 @@
+- [Notion 개인일정 DB 실제 스키마](notion_personal_schedule_db_schema.md) — 제목/유형/날짜/장소/메모/상태/중요도 뿐, 참석자·반복여부·"캘린더 등록 완료" 옵션 없음
+- [Notion MCP 미탑재, notion-api 스킬로 대체](notion_mcp_not_available.md) — 페이지 조회/프로퍼티 업데이트는 인라인 python api() 호출 사용
+- [gws CLI 인증 만료](gws_cli_auth_expired.md) — invalid_grant 발생 시 mcp__claude_ai_Google_Calendar(computer.daejeons@gmail.com)로 즉시 대체
